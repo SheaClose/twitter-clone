@@ -60,20 +60,11 @@ $(document).ready(function () {
      });
      $('.content').mouseleave(function() {
        $('.tweet-actions', this).slideUp();
+       $('.stats', this).slideUp();
     });
 
     $('.tweet').on('click', function() {
       $('.stats', this).slideDown(true);
      });
-    //  $('.content').mouseleave(function() {
-    //    $('.tweet-actions', this).toggle(false);
-    // });
-      // $(document).on('mouseenter', '.tweet', function(e) {
-    //    $(e.target).find('.tweet-actions').slideDown('fast');
-    //  });
-    //  $(document).on('mouseleave', '.tweet', function(e) {
-    //    $(e.target).find('.tweet-actions').slideUp('fast');
-    //  });
-
 
 });
