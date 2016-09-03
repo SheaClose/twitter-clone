@@ -1,4 +1,10 @@
 $(document).ready(function () {
+// var i = 0;
+// while (i = 0) {
+//   function () {
+//     $('.tweet-actions').hide();
+//   }
+// }
   $('.tweet-compose').on('focus', function() {
     $(this).css('height', '5em');
     $('#char-count').css('visibility', 'visible');
@@ -49,6 +55,25 @@ $(document).ready(function () {
     });
 
 
+    $('.content').mouseenter(function() {
+      $('.tweet-actions', this).toggle(true);
+     });
+     $('.content').mouseleave(function() {
+       $('.tweet-actions', this).toggle(false);
+    });
+
+    $('.tweet').on('click', function() {
+      $('.stats', this).toggle(true);
+     });
+    //  $('.content').mouseleave(function() {
+    //    $('.tweet-actions', this).toggle(false);
+    // });
+      // $(document).on('mouseenter', '.tweet', function(e) {
+    //    $(e.target).find('.tweet-actions').slideDown('fast');
+    //  });
+    //  $(document).on('mouseleave', '.tweet', function(e) {
+    //    $(e.target).find('.tweet-actions').slideUp('fast');
+    //  });
 
 
 });
