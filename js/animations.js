@@ -56,14 +56,14 @@ $(document).ready(function () {
 
 
     $('.content').mouseenter(function() {
-      $('.tweet-actions', this).toggle(true);
+      $('.tweet-actions', this).slideDown();
      });
      $('.content').mouseleave(function() {
-       $('.tweet-actions', this).toggle(false);
+       $('.tweet-actions', this).slideUp();
     });
 
     $('.tweet').on('click', function() {
-      $('.stats', this).toggle(true);
+      $('.stats', this).slideDown(true);
      });
     //  $('.content').mouseleave(function() {
     //    $('.tweet-actions', this).toggle(false);
